@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="report.css">
+    <title>Report Page</title>
+</head>
+<body>
+    <div class="report-container">
+        <h2>Reports</h2>
+        <!-- Display PM Comments from Firebase -->
+        <div id="reportContainer"></div>
+
+        <!-- Back to Comment Page Button -->
+        <button onclick="goToCommentPage()">Back to Comment Page</button>
+
+    </div>
+
+    
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="report.js"></script>
+</body>
+</html>

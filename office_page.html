@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Office Page</title>
+    <link rel="stylesheet" href="office_page.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Office Form</h1>
+        <form id="officeForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="location">Company Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="organization">Organization:</label>
+            <input type="text" id="organization" name="organization" required>
+
+            <label for="department">Department:</label>
+            <input type="text" id="department" name="department" required>
+
+            <h2>Computer Information</h2>
+
+            <label for="computerName">Computer Name:</label>
+            <input type="text" id="computerName" name="computerName" required>
+
+            <label for="serialNumber">Serial Number:</label>
+            <input type="text" id="serialNumber" name="serialNumber" required>
+
+            <label for="model">Model:</label>
+            <input type="text" id="model" name="model" required>
+
+            <label for="computerType">Computer Type:</label>
+            <select id="computerType" name="computerType" required>
+                <option value="laptop">Laptop</option>
+                <option value="desktop">Desktop</option>
+                <option value="scanner">Scanner</option>
+                <option value="ups">UPS</option>
+                <option value="printer">Printer</option>
+            </select>
+
+            <label for="serviceDone">Service Done:</label>
+            <textarea id="serviceDone" name="serviceDone" rows="4" required></textarea>
+
+            <button type="button" onclick="submitForm()">Submit</button>
+            <h3>Already submitted your info?</h3>
+            <a class="button" href="comment_page.html">check comment page</a>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./office_page.js"></script>
+
+</body>
+</html>

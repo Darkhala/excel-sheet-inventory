@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PM Page</title>
+    <link rel="stylesheet" href="pm_page.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>PM Page</h1>
+
+        <!-- Displayed Individual Data -->
+        <div id="individualData"></div>
+
+        <!-- PM Comment Form -->
+        <form id="pmCommentForm">
+            <label for="pmName">PM Name:</label>
+            <input type="text" id="pmName" name="pmName" required>
+
+            <label for="clientName">Client Name:</label>
+            <input type="text" id="clientName" name="clientName" required>
+
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" rows="4" required></textarea>
+
+            <button type="button" onclick="submitPMComment()">Submit Comment</button>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./pm_page.js"></script>
+</body>
+</html>

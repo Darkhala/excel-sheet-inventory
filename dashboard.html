@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="container left-container">
+        <h1>Preventive Maintenance</h1>
+        <button class="continue-button" onclick="redirectToPMPage()">Continue</button>
+    </div>
+
+    <div class="container right-container">
+        <h1>Office</h1>
+        <button class="continue-button" onclick="redirectToOfficePage()">Continue</button>
+    </div>
+
+    <script>
+        function redirectToPMPage() {
+            window.location.href = "pm_page.html"; // Replace with the actual PM page URL
+        }
+
+        function redirectToOfficePage() {
+            window.location.href = "office_page.html"; // Replace with the actual Office page URL
+        }
+    </script>
+</body>
+</html>

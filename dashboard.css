@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #00aee9; /* Blue background color */
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+    color: white;
+}
+
+.left-container {
+    background-color: #00a65a; /* Green background color for Preventive Maintenance */
+}
+
+.right-container {
+    background-color: #000; /* Black background color for Office */
+}
+
+.continue-button {
+    background-color: #00aee9; /* Blue button color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.continue-button:hover {
+    background-color: #007eb5; /* Darker blue color on hover */
+}
